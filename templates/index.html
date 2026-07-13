@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+<h1>Welcome to Docket</h1>
+<p>Your task manager is coming soon</p>
+
+{% block title %}Docket{% endblock %}
+
+{% block content %}
+<div class="text-center mt-5">
+    <h1>Organize your work with Docket</h1>
+    <p class="lead">a simple task manager built with Python and Flask</p>
+    <a href="{{ url_for('register') }}" class="btn btn-primary btn-lg">Get started</a>
+</div>
+{% endblock %}
